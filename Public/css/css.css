@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Cormorant-Bold';
+    src: url('../fonts/Cormorant-Bold.eot');
+    src: local('☺'), url('../fonts/Cormorant-Bold.woff') format('woff'), url('../fonts/Cormorant-Bold.ttf') format('truetype'), url('../fonts/Cormorant-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant-BookItalic';
+    src: url('../fonts/Cormorant-BookItalic.eot');
+    src: local('☺'), url('../fonts/Cormorant-BookItalic.woff') format('woff'), url('../fonts/Cormorant-BookItalic.ttf') format('truetype'), url('../fonts/Cormorant-BookItalic.svg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cormorant-Light';
+    src: url('../fonts/Cormorant-Light.eot');
+    src: local('☺'), url('../fonts/Cormorant-Light.woff') format('woff'), url('../fonts/Cormorant-Light.ttf') format('truetype'), url('../fonts/Cormorant-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant-Regular';
+    src: url('../fonts/Cormorant-Regular.eot');
+    src: local('☺'), url('../fonts/Cormorant-Regular.woff') format('woff'), url('../fonts/Cormorant-Regular.ttf') format('truetype'), url('../fonts/Cormorant-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('../fonts/PTS55F.eot');
+    src: local('☺'), url('../fonts/PTS55F.woff') format('woff'), url('../fonts/PTS55F.ttf') format('truetype'), url('../fonts/PTS55F.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cormorant-Regular, sans-serif;
+}
+
+.nav-bar-place-holder {
+    width: 100%;
+    height: 61px;
+    position: relative;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 61px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    z-index: 1001;
+}
+
+.nav-bar .carcass {
+    width: 1200px;
+    height: 61px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.nav-bar .carcass .logo {
+    width: 110px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+    background: url("../images/logo.png") no-repeat center;
+}
+
+.nav-bar .carcass .menu {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav-bar .carcass .menu ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-left: 0;
+    height: 61px;
+    position: relative;
+}
+
+.nav-bar .carcass .menu ul li.element {
+    margin-top: 0;
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 43px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.nav-bar .carcass .menu ul li.active {
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 3px solid #a30f1d;
+}
+
+.nav-bar .carcass .menu ul li a {
+    font-family: Cormorant-Regular, sans-serif;
+    font-size: 20px;
+    color: #262626;
+    text-decoration: none;
+}
+
+.nav-bar .carcass .menu ul li.element:Hover {
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 3px solid #a30f1d;
+
+    -webkit-transition: border-left,border-right,border-top  0.5s;
+    -moz-transition: border-left,border-right,border-top 0.5s;
+    -ms-transition: border-left,border-right,border-top 0.5s;
+    -o-transition: border-left,border-right,border-top 0.5s;
+    transition: border-left,border-right,border-top 0.5s;
+}
+
+.nav-bar .carcass .menu ul li.special {
+    padding: 7px 15px;
+    border: 2px solid #a30f1d;
+    display: inline-block;
+    margin-left: 15px;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.nav-bar .carcass .menu ul li.special:Hover {
+    background: #a30f1d;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.nav-bar .carcass .menu ul li.special:Hover > a {
+    color: #ffffff;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.nav-bar .carcass .menu ul li.special a {
+    font-family: Open-Sans, sans-serif;
+    font-size: 13px;
+    color: #a30f1d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/*====================================================================================================================*/
+
+.header {
+    width: 100%;
+    height: 585px;
+    background: url("../images/header.jpg") center;
+    background-size: cover;
+    position: relative;
+}
+
+.header .dark-effect {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0, 0.7);
+}
+
+.header .carcass {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0);
+    position: relative;
+}
+
+.header .carcass .title {
+    position: relative;
+    font-family: Cormorant-Bold, sans-serif;
+    font-size: 42px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 0;
+}
+
+.header .carcass .description {
+    text-align: center;
+    font-family: Cormorant-BookItalic, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+.header .carcass .button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header .carcass .button .tdm-button {
+    font-family: Open-Sans, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid #a30f1d;
+    padding: 13px 30px;
+    cursor: pointer;
+    letter-spacing: 4px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.header .carcass .button .tdm-button:Hover {
+    background: #a30f1d;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.header .carcass .button .tdm-button:focus {
+    outline: none;
+}
+
+.header .carcass .button .tdm-button:active {
+    box-shadow: 0 0 5px 5px #0f7ea3;
+}
+
+/*====================================================================================================================*/
+
+.news {
+    width: 100%;
+    height: 605px;
+    background: #ffffff;
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.news .news-carcass {
+    width: 1200px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.news-page {
+    width: 945px;
+    height: 499px;
+    margin-top: 108px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-page .left-bar {
+    width: 545px;
+    height: 499px;
+    float: left;
+    border: 1px solid #262626;
+}
+
+.news-page .left-bar span {
+    font-family: Cormorant-Bold, sans-serif;
+    font-size: 20px;
+    color: #a30f1d;
+    text-transform: uppercase;
+}
+
+.news-page .right-bar {
+    width: 395px;
+    height: 499px;
+    float: right;
+    border: 1px solid #262626;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TMD +</title>
+    <link rel="stylesheet" href="Public/css/css.css" type="text/css" />
+
+    <script src="Public/js/jquery-3.1.0.min.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '1546143335411758',
+                xfbml      : true,
+                version    : 'v2.7'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</head>
+<body>
+    <!-- ============================================== Top Nav =====================================================-->
+    <div class="nav-bar">
+        <div class="carcass">
+            <a href="#"><div class="logo"></div></a>
+            <div class="menu">
+                <ul>
+                    <li class="element active"><a href="#">О компании</a></li>
+                    <li class="element"><a href="#">Услуги</a></li>
+                    <li class="element"><a href="#">Команда</a></li>
+                    <li class="element"><a href="#">Карьера</a></li>
+                    <li class="element"><a href="#">Контакты</a></li>
+                    <li class="special"><a href="#">Задать вопрос</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav-bar-place-holder"></div>
+    <!-- ============================================== End Top Nav =================================================-->
+
+    <!-- ============================================== Header ======================================================-->
+    <div class="header">
+        <div class="dark-effect"></div>
+        <div class="carcass">
+            <div class="title">мы решаем проблемы.</div>
+            <div class="description">Наши специалисты помогут Вам в<br />
+                любых юридических вопросах</div>
+            <div class="button">
+                <button class="tdm-button">связаться</button>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================== End Header ==================================================-->
+
+    <!-- ============================================== News ========================================================-->
+    <div class="news">
+        <div class="news-carcass">
+            <div class="news-page">
+                <div class="left-bar">
+                    <span>Новости</span>
+                </div>
+                <div class="right-bar">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================== End News ====================================================-->
+</body>
+</html>
