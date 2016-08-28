@@ -380,7 +380,7 @@ body {
 .about-block-title {
     width: 253px;
     height: 40px;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -488,4 +488,137 @@ body {
     position: absolute;
     top: 0;
     left: 283px;
+}
+
+.mission-carcass {
+    width: 1200px;
+    height: 825px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 0 auto;
+    position: relative;
+}
+
+.mission-title {
+    font-family: Cormorant-Bold, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.mission-delimiter {
+    width: 80px;
+    height: 3px;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #a30f1d;
+}
+
+.mission-description {
+    text-align: center;
+    font-family: Cormorant-Regular, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mission-grid {
+    margin-top: 40px;
+    width: 944px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-left {
+    float: left;
+    width: 327px;
+    position: relative;
+}
+
+.col-right {
+    float: right;
+    width: 383px;
+    position: relative;
+}
+
+.block-1 {
+    width: 100%;
+    height: 205px;
+    background: url("../images/block1.png") no-repeat center;
+    padding: 5px;
+}
+
+.block-3 {
+    margin-top: 40px;
+    width: 100%;
+    height: 298px;
+    background: url("../images/block3.png") no-repeat center;
+    padding: 5px;
+}
+
+.block-2 {
+    width: 100%;
+    height: 205px;
+    background: url("../images/block2.png") no-repeat center;
+    padding: 5px;
+}
+
+
+.block-4 {
+    margin-top: 40px;
+    width: 100%;
+    height: 298px;
+    background: url("../images/block4.png") no-repeat center;
+    padding: 5px;
+}
+
+.block-header {
+    font-family: Cormorant-Regular, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.block-content {
+    margin-top: 30px;
+    width: 100%;
+    text-align: justify;
+    font-family: Cormorant-Regular, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/*====================================================================================================================*/
+
+.services {
+    width: 100%;
+    height: 897px;
+    position: relative;
+    background: #eeeeee;
+}
+
+.services-carcass {
+    width: 1200px;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    position: relative;
+    margin: 0 auto;
+}
+
+/*====================================================================================================================*/
+
+.team {
+    width: 100%;
+    height: 938px;
+    position: relative;
+    border-bottom: 1px solid #262626;
+}
+
+.team-carcass {
+    width: 1200px;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    position: relative;
+    margin: 0 auto;
 }
