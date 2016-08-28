@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TMD +</title>
+    <title>TDM +</title>
     <link rel="stylesheet" href="Public/css/css.css" type="text/css" />
 
     <script src="Public/js/jquery-3.1.0.min.js"></script>
+
+</head>
+<body>
+    <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function() {
             FB.init({
@@ -19,24 +23,22 @@
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) {return;}
             js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
+            js.src = "Public/js/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-</head>
-<body>
     <!-- ============================================== Top Nav =====================================================-->
     <div class="nav-bar">
         <div class="carcass">
             <a href="#"><div class="logo"></div></a>
             <div class="menu">
                 <ul>
-                    <li class="element active"><a href="#">О компании</a></li>
-                    <li class="element"><a href="#">Услуги</a></li>
-                    <li class="element"><a href="#">Команда</a></li>
-                    <li class="element"><a href="#">Карьера</a></li>
-                    <li class="element"><a href="#">Контакты</a></li>
-                    <li class="special"><a href="#">Задать вопрос</a></li>
+                    <a href="#about"><li class="element active">О компании</li></a>
+                    <a href="#services"><li class="element">Услуги</li></a>
+                    <a href="#team"><li class="element">Команда</li></a>
+                    <a href="#career"><li class="element">Карьера</li></a>
+                    <a href="#contacts"><li class="element">Контакты</li></a>
+                    <a href="#ask"><li class="special">Задать вопрос</li></a>
                 </ul>
             </div>
         </div>
@@ -45,7 +47,7 @@
     <!-- ============================================== End Top Nav =================================================-->
 
     <!-- ============================================== Header ======================================================-->
-    <div class="header">
+    <div class="header" id="header">
         <div class="dark-effect"></div>
         <div class="carcass">
             <div class="title">мы решаем проблемы.</div>
@@ -59,18 +61,98 @@
     <!-- ============================================== End Header ==================================================-->
 
     <!-- ============================================== News ========================================================-->
-    <div class="news">
+    <div class="news" id="news">
         <div class="news-carcass">
             <div class="news-page">
                 <div class="left-bar">
-                    <span>Новости</span>
+                    <div class="news-page-title">Новости</div>
+                    <div class="news-wrap">
+                        <table>
+                            <tr>
+                                <td valign="top">
+                                    <div class="news-wrap-date">
+                                        <div class="news-wrap-date-day">26</div>
+                                        <div class="news-wrap-date-month">августа</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="news-wrap-title">Lorem ipsum dolor sit amer</div>
+                                    <div class="news-wrap-content">Юридическая компания TDM Plus успешно функционирует на рынке юридических услуг с 2014 года.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <div class="news-wrap-date">
+                                        <div class="news-wrap-date-day">01</div>
+                                        <div class="news-wrap-date-month">апреля</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="news-wrap-title">Lorem ipsum dolor sit amer</div>
+                                    <div class="news-wrap-content">Юридическая компания TDM Plus успешно функционирует на рынке юридических услуг с 2014 года.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <div class="news-wrap-date">
+                                        <div class="news-wrap-date-day">26</div>
+                                        <div class="news-wrap-date-month">августа</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="news-wrap-title">Lorem ipsum dolor sit amer</div>
+                                    <div class="news-wrap-content">Юридическая компания TDM Plus успешно функционирует на рынке юридических услуг с 2014 года.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <div class="news-wrap-date">
+                                        <div class="news-wrap-date-day">26</div>
+                                        <div class="news-wrap-date-month">августа</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="news-wrap-title">Lorem ipsum dolor sit amer</div>
+                                    <div class="news-wrap-content">Юридическая компания TDM Plus успешно функционирует на рынке юридических услуг с 2014 года.</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="right-bar">
-
+                    <div class="fb-page" data-href="https://www.facebook.com/tdmpluslawfirm" data-tabs="timeline" data-width="395" data-height="439" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tdmpluslawfirm" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tdmpluslawfirm">TDM Plus</a></blockquote></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- ============================================== End News ====================================================-->
+
+    <!-- ============================================== About =======================================================-->
+    <div class="about" id="about">
+        <div class="about-carcass">
+            <div class="about-block-title"><img src="Public/images/decoration-uncolored.png" />&nbsp;&nbsp;&nbsp;О компании&nbsp;&nbsp;&nbsp;<img src="Public/images/decoration.png" /></div>
+            <div class="about-block-content-wrap">
+                Юридическая компания TDM Plus успешно функционирует на рынке юридических услуг с 2014 года. Компания образована совместными усилиями практикующих юристов, обладающих огромным опытом по своей специальности и способных сформулировать и реализовать грамотные и нестандартные решения юридических проблем.<br />
+                <br />
+                Сотрудники Компании отстаивают интересы клиентов в судебных разбирательствах и сложных переговорах, готовят проекты документов и изучают лучшую практику разрешения того или иного вопроса, отслеживают изменения законодательства и умело пользуются его возможностями. Компания применяет комплексный подход к любой правовой проблеме, нередко привлекает специалистов из других областей (бухгалтеров, аудиторов, нотариусов, оценщиков, брокеров), обращается с официальным запросом в государственные органы и выясняют их позиции в случае наличия пробелов или противоречий в законодательстве.
+            </div>
+            <div class="about-quote">
+                Мы убеждены, что проблему клиента можно превратить в конкретную и реализуемую задачу, с четкими сроками выполнения и ожидаемыми результатами. Мы не оказываем услуги и не предоставляем консультации – мы решаем проблемы, используя все возможности законодательства и следуя интересам клиента.
+            </div>
+        </div>
+        <div class="about-block-background"></div>
+        <div class="pillar-1"></div>
+        <div class="pillar-2"></div>
+        <div class="pillar-3"></div>
+    </div>
+    <!-- ============================================== End About ===================================================-->
+
+    <!-- ============================================== Block Mission ===============================================-->
+    <div class="mission" id="mission">
+        <div class="pillar-1"></div>
+        <div class="pillar-2"></div>
+        <div class="pillar-3"></div>
+    </div>
+    <!-- ============================================== End Block Mission ===========================================-->
 </body>
 </html>
