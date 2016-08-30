@@ -954,19 +954,20 @@ body {
 }
 
 .ask-form {
-    width: 473px;
+    width: 516px;
     height: 466px;
-    margin: 74px auto;
+    margin: 94px auto 0 auto;
     position: relative;
 }
 
 .ask-form-group {
     width: 100%;
     position: relative;
+    margin-bottom: 15px;
 }
 
 .ask-form-name {
-    width: 100%;
+    width: 473px;
     height: 44px;
     background: url("../images/icons/user-icon.gif") no-repeat #ffffff;
     background-position-y: center;
@@ -976,8 +977,216 @@ body {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    font-family: Cormorant-Light, sans-serif;
+    font-size: 18px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .ask-form-name:focus {
     outline: none;
+    box-shadow: 0 0 4px 4px #e2002b;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.ask-form-phone {
+    width: 473px;
+    height: 44px;
+    background: url("../images/icons/phone-icon.gif") no-repeat #ffffff;
+    background-position-y: center;
+    background-position-x: 15px;
+    padding-left: 40px;
+    border: 1px solid #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Cormorant-Light, sans-serif;
+    font-size: 18px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.ask-form-phone:focus {
+    outline: none;
+    box-shadow: 0 0 4px 4px #e2002b;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.ask-form-message {
+    width: 473px;
+    background: url("../images/icons/pen-icon.gif") no-repeat #ffffff;
+    background-position-y: 15px;
+    background-position-x: 15px;
+    padding-top: 15px;
+    padding-left: 40px;
+    border: 1px solid #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Cormorant-Light, sans-serif;
+    font-size: 18px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.ask-form-message:focus {
+    outline: none;
+    box-shadow: 0 0 4px 4px #e2002b;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.ask-form-email {
+    width: 473px;
+    height: 44px;
+    background: url("../images/icons/mail-icon.gif") no-repeat #ffffff;
+    background-position-y: center;
+    background-position-x: 15px;
+    padding-left: 40px;
+    border: 1px solid #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Cormorant-Light, sans-serif;
+    font-size: 18px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.ask-form-email:focus {
+    outline: none;
+    box-shadow: 0 0 4px 4px #e2002b;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.ask-form-button {
+    width: 100%;
+    height: 44px;
+    font-family: Open-Sans, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.ask-form-button:hover {
+    outline: none;
+    background: #ffffff;
+    color: #a30f1d;
+    font-size: 20px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/*====================================================================================================================*/
+
+.contacts {
+    width: 100%;
+    height: 586px;
+    position: relative;
+    background: #bdbdbd;
+}
+
+.contacts-wrap {
+    width: 424px;
+    padding: 30px 30px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    z-index: 101;
+    background: #282828;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.contacts-title {
+    font-family: Cormorant-Bold, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contacts-location {
+    font-family: Cormorant-Bold, sans-serif;
+    font-size: 16px;
+    color: #8d8d8d;
+    margin-bottom: 20px;
+}
+
+.contacts-phone {
+    font-family: Cormorant-Bold, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/*====================================================================================================================*/
+
+.footer {
+    width: 100%;
+    height: 93px;
+    background: #282828;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+}
+
+.copyright {
+    width: 320px;
+    height: 30px;
+    font-family: Cormorant-Regular, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 40px auto 0 auto;
+    text-align: center;
 }

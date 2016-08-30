@@ -4,12 +4,20 @@
 $(document).ready(function() {
     $(".init-slider").each(function() {
         var repeats = 1,
-            interval = 5,
+            interval = 8,
             repeat = true,
             slider = $(this),
             repeatCount = 0,
             elements = $(slider).find("li").length,
             pagination = $('.team-slider-pagination');
+
+        $("ul li", this).on('hover', function() {
+            repeat = false;
+            console.log('Mouse hover on');
+        }, function() {
+           repeat = true;
+            console.log('Mouse hover off');
+        });
 
         if (repeat) {
             repeat = setInterval(function() {
