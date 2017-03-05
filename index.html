@@ -10,11 +10,10 @@ Created by Erlan
 <head>
     <meta charset="UTF-8">
     <title>TDM +</title>
+    <link rel="stylesheet" href="Public/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="Public/slick/slick-theme.css" type="text/css">
     <link rel="stylesheet" href="Public/css/css.css" type="text/css" />
 
-    <script src="Public/js/jquery-3.1.0.min.js"></script>
-    <script src="Public/js/NavigationMenu.js"></script>
-    <script src="Public/js/Slider.js"></script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -62,7 +61,7 @@ Created by Erlan
             <div class="description">Наши специалисты помогут Вам в<br />
                 любых юридических вопросах</div>
             <div class="button">
-                <button class="tdm-button">связаться</button>
+                <button class="tdm-button" data-target="#ask" id="feedback">связаться</button>
             </div>
         </div>
     </div>
@@ -218,7 +217,7 @@ Created by Erlan
                     <div class="services-block-description">Donec eu libero sit amet quam egestas semper.
                         Aenean ultricies mi vitae est, mauris placerat
                         leo tincidunt mauris eu risus</div>
-                    <div class="services-block-footer"><button class="services-block-button">подробнее</button></div>
+                    <div class="services-block-footer"><button class="services-block-button" data-target="#basic-services">подробнее</button></div>
                 </div>
                 <div class="services-block">
                     <div class="services-block-preview"><div class="dark-effect"></div></div>
@@ -226,7 +225,7 @@ Created by Erlan
                     <div class="services-block-description">Donec eu libero sit amet quam egestas semper.
                         Aenean ultricies mi vitae est, mauris placerat
                         leo tincidunt mauris eu risus</div>
-                    <div class="services-block-footer"><button class="services-block-button">подробнее</button></div>
+                    <div class="services-block-footer"><button class="services-block-button" data-target="#basic-services">подробнее</button></div>
                 </div>
                 <div class="services-block">
                     <div class="services-block-preview"><div class="dark-effect"></div></div>
@@ -234,7 +233,7 @@ Created by Erlan
                     <div class="services-block-description">Donec eu libero sit amet quam egestas semper.
                         Aenean ultricies mi vitae est, mauris placerat
                         leo tincidunt mauris eu risus</div>
-                    <div class="services-block-footer"><button class="services-block-button">подробнее</button></div>
+                    <div class="services-block-footer"><button class="services-block-button" data-target="#basic-services">подробнее</button></div>
                 </div>
             </div>
         </div>
@@ -246,79 +245,99 @@ Created by Erlan
         <div class="team-carcass">
             <div class="about-block-title"><img src="Public/images/decoration-uncolored.png" />&nbsp;&nbsp;&nbsp;Наша команда&nbsp;&nbsp;&nbsp;<img src="Public/images/decoration.png" /></div>
             <div class="team-slider-block">
-                <div class="team-slider-block-helper init-slider">
-                    <ul>
-                        <li data-slide="0">
-                            <div class="team-left-bar">
-                                <div class="team-photo"></div>
+                <div class="team-slider-block-helper" id="init-slider">
+                    <div class="slide">
+                        <div class="team-left-bar">
+                            <div class="team-photo">
+                                <img src="Public/images/team/daniyar.jpg">
                             </div>
-                            <div class="team-right-bar">
-                                <div class="team-right-header">
-                                    Данияр Торобаев
-                                    <div>Директор и один из основателей TDM+</div>
-                                </div>
-                                <div class="team-right-content">
-                                    Адвокат, член Коллегии адвокатов Кыргызской Республики. Возглавляет практику судебных споров. Имеет большой опыт сопровождения крупнейших судебных споров и сложных переговоров. Специализируется в области споров в финансовой сфере (кредитование, финансирование, инвестиционная деятельность и пр.), корпоративных, строительных споров, а также разрешении конфликтов с государственными органами. Предоставляет правовую поддержку клиентам при возникновении либо угрозе возникновения конфликтов, требующих разрешения в судебных органах. Имеет значительный опыт досудебного разрешения конфликтов и обеспечения юридической защиты и представления интересов клиентов в правоохранительных органах на всех стадиях уголовного преследования.
-                                </div>
-                                <div class="team-right-education">
-                                    <span>Образование:</span><br />
-                                    Кыргызско-Российский Славянский Университет , юридический факультет.
-                                </div>
-                                <div class="team-right-experience">
-                                    До работы в TDM Plus Данияр осуществлял деятельность в Национальном банке Кыргызской Республики и ОБСЕ. Свободно говорит на русском, кыргызском и английском языках.
-                                </div>
+                        </div>
+                        <div class="team-right-bar">
+                            <div class="team-right-header">
+                                Данияр Торобаев
+                                <div>Директор и один из основателей TDM+</div>
                             </div>
-                        </li>
-                        <li data-slide="1">
-                            <div class="team-left-bar">
-                                <div class="team-photo"></div>
+                            <div class="team-right-content">
+                                Адвокат, член Коллегии адвокатов Кыргызской Республики. Возглавляет практику судебных споров. Имеет большой опыт сопровождения крупнейших судебных споров и сложных переговоров. Специализируется в области споров в финансовой сфере (кредитование, финансирование, инвестиционная деятельность и пр.), корпоративных, строительных споров, а также разрешении конфликтов с государственными органами. Предоставляет правовую поддержку клиентам при возникновении либо угрозе возникновения конфликтов, требующих разрешения в судебных органах. Имеет значительный опыт досудебного разрешения конфликтов и обеспечения юридической защиты и представления интересов клиентов в правоохранительных органах на всех стадиях уголовного преследования.
                             </div>
-                            <div class="team-right-bar">
-                                <div class="team-right-header">
-                                    Джанар Мураканов
-                                    <div>Партнер TDM+.</div>
-                                </div>
-                                <div class="team-right-content">
-                                    Возглавляет работу по банковским и финансовым вопросам. Специализируется в области корпоративного и коммерческого права. Обладает большим опытом консультирования клиентов из числа финансово-кредитных учреждений, проведения комплексных юридических проверок (due diligence) и реализации проектов по приобретению и отчуждению активов. Руководил процессами создания, приобретения, реорганизации финансово-кредитных учреждений. Осуществлял подготовку компании к продаже, сопровождение крупных финансовых сделок и сделок с недвижимостью, с производными финансовыми инструментами.
-                                </div>
-                                <div class="team-right-education">
-                                    <span>Образование:</span><br />
-                                    Кыргызско-Российский Славянский Университет, юридический факультет.
-                                </div>
-                                <div class="team-right-experience">
-                                    До прихода в TDM Plus Джанар работал в Национальном банке Кыргызской Республики, Микрокредитной компании «Мол Булак Финанс», в том числе в Азербайджанской Республике. Свободно говорит на русском, кыргызском и турецком языках.
-                                </div>
+                            <div class="team-right-education">
+                                <span>Образование:</span><br />
+                                Кыргызско-Российский Славянский Университет , юридический факультет.
                             </div>
-                        </li>
-                        <li data-slide="2">
-                            <div class="team-left-bar">
-                                <div class="team-photo"></div>
+                            <div class="team-right-experience">
+                                До работы в TDM Plus Данияр осуществлял деятельность в Национальном банке Кыргызской Республики и ОБСЕ. Свободно говорит на русском, кыргызском и английском языках.
                             </div>
-                            <div class="team-right-bar">
-                                <div class="team-right-header">
-                                    Урмат Абакиров
-                                    <div>Исполнительный Директор TDM+</div>
-                                </div>
-                                <div class="team-right-content">
-                                    Специалист в области кредитной деятельности. Обладает успешным опытом судебного представительства и защиты прав клиентов по вопросам взыскания проблемной задолженности. Специализируется на системе лицензирования предпринимательской деятельности и регистрации прав на недвижимое и движимое имущество.
-                                </div>
-                                <div class="team-right-education">
-                                    <span>Образование:</span><br />
-                                    Кыргызский Национальный Университет, юридический факультет.
-                                </div>
-                                <div class="team-right-experience">
-                                    В прошлом Урмат работал в Национальном банке Кыргызской Республике.
-                                </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="team-left-bar">
+                            <div class="team-photo">
+                                <img src="Public/images/team/murakanov.jpg">
                             </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="team-slider-pagination">
-                    <ul>
-                        <li class="active" data-slide="0"></li>
-                        <li data-slide="1"></li>
-                        <li data-slide="2"></li>
-                    </ul>
+                        </div>
+                        <div class="team-right-bar">
+                            <div class="team-right-header">
+                                Джанар Мураканов
+                                <div>Партнер TDM+</div>
+                            </div>
+                            <div class="team-right-content">
+                                Возглавляет работу по банковским и финансовым вопросам. Специализируется в области корпоративного и коммерческого права. Обладает большим опытом консультирования клиентов из числа финансово-кредитных учреждений, проведения комплексных юридических проверок (due diligence) и реализации проектов по приобретению и отчуждению активов. Руководил процессами создания, приобретения, реорганизации финансово-кредитных учреждений. Осуществлял подготовку компании к продаже, сопровождение крупных финансовых сделок и сделок с недвижимостью, с производными финансовыми инструментами.
+                            </div>
+                            <div class="team-right-education">
+                                <span>Образование:</span><br />
+                                Кыргызско-Российский Славянский Университет, юридический факультет.
+                            </div>
+                            <div class="team-right-experience">
+                                До прихода в TDM Plus Джанар работал в Национальном банке Кыргызской Республики, Микрокредитной компании «Мол Булак Финанс», в том числе в Азербайджанской Республике. Свободно говорит на русском, кыргызском и турецком языках.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="team-left-bar">
+                            <div class="team-photo">
+                                <img src="Public/images/team/abakirov.jpg">
+                            </div>
+                        </div>
+                        <div class="team-right-bar">
+                            <div class="team-right-header">
+                                Урмат Абакиров
+                                <div>Партнер TDM+</div>
+                            </div>
+                            <div class="team-right-content">
+                                Специалист в области кредитной деятельности. Обладает успешным опытом судебного представительства и защиты прав клиентов по вопросам взыскания проблемной задолженности. Специализируется на системе лицензирования предпринимательской деятельности и регистрации прав на недвижимое и движимое имущество.
+                            </div>
+                            <div class="team-right-education">
+                                <span>Образование:</span><br />
+                                Кыргызский Национальный Университет, юридический факультет.
+                            </div>
+                            <div class="team-right-experience">
+                                В прошлом Урмат работал в Национальном банке Кыргызской Республике.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="team-left-bar">
+                            <div class="team-photo">
+                                <img src="Public/images/team/ibragimova.jpg">
+                            </div>
+                        </div>
+                        <div class="team-right-bar">
+                            <div class="team-right-header">
+                                Джамиля Ибрагимова.
+                                <div>Младший Партнер TDM+</div>
+                            </div>
+                            <div class="team-right-content">
+                                Специалист по корпоративным вопросам. Имеет большой опыт работы в сфере консультации клиентов по вопросам договорного, кредитного, налогового и антимонопольного законодательства, а также регистрации юридических лиц в государственных органах Кыргызской Республики.
+                            </div>
+                            <div class="team-right-education">
+                                <span>Образование:</span><br />
+                                Имеет степень магистра международного частного права, выпускник Дипломатической академии МИД РФ.
+                            </div>
+                            <div class="team-right-experience">
+                                До TDM Plus работала в юридической консалтинговой фирме, а также имеет опыт юридической работы в Москве, Российская Федерация.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -332,7 +351,7 @@ Created by Erlan
             <div class="hr-block-title"><img src="Public/images/decoration-uncolored.png" />&nbsp;&nbsp;&nbsp;Карьера&nbsp;&nbsp;&nbsp;<img src="Public/images/decoration.png" /></div>
             <div class="hr-content">Основным активом нашей Компании являются ее сотрудники, профессиональные качества которых гарантируют, что наши клиенты получат квалифицированную юридическую помощь. Мы стремимся развивать наших сотрудников, как профессионально, так и лично, предлагая им сложные задания и побуждая их думать вне рамок и стандартов. Мы всегда рады талантливым, хорошо образованным и  трудолюбивым юристам, готовым присоединиться к нашей команде.<br />
                 <br />
-                Если вы хотите присоединиться к нам, пожалуйста, отправьте свое резюме на <a href="mailto:tdmplus@hotmail.com" class="hr-link" target="_blank">tdmplus@hotmail.com</a>
+                Если вы хотите присоединиться к нам, пожалуйста, отправьте свое резюме на <a href="mailto:tdmpluslawfirm@gmail.com" class="hr-link" target="_blank">tdmpluslawfirm@gmail.com</a>
             </div>
         </div>
     </div>
@@ -366,11 +385,11 @@ Created by Erlan
 
     <!-- ============================================== Contacts ====================================================-->
     <div class="contacts" id="contacts">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1033.8621062600391!2d74.60459898581564!3d42.8685461130258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec8193ebf1a81%3A0xd7036f4caae28e5d!2zU29mdGxpbmUg0JrRi9GA0LPRi9C30YHRgtCw0L0!5e0!3m2!1sru!2skg!4v1472540371693" frameborder="0" style="border:0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1033.8621062600391!2d74.60459898581564!3d42.8685461130258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec8193ebf1a81%3A0xd7036f4caae28e5d!2zU29mdGxpbmUg0JrRi9GA0LPRi9C30YHRgtCw0L0!5e0!3m2!1sru!2skg!4v1472540371693" frameborder="0" style="border:0; width: 100%; height: 100%; position: absolute;" allowfullscreen zoom="false"></iframe>
         <div class="contacts-wrap">
             <div class="contacts-title">Юридическая компания “TDM+”</div>
-            <div class="contacts-location">ул. Раззакова 19 Б.Ц. "Россия", 16 этаж, офис 1608</div>
-            <div class="contacts-phone">+ 996 777 12 34 56</div>
+            <div class="contacts-location">Кыргызстан: 19, улица Раззаков 720040, Бишкек<br >Email: <a href="mailto:tdmpluslawfirm@gmail.com">tdmpluslawfirm@gmail.com</a> </div>
+            <div class="contacts-phone">+ 996 312 961 941</div>
         </div>
     </div>
     <!-- ============================================== End Contacts ================================================-->
@@ -380,5 +399,100 @@ Created by Erlan
         <div class="copyright">&copy; 2016 "TDM+"</div>
     </div>
     <!-- ============================================== End Footer ==================================================-->
+
+    <div class="overlay" id="basic-services">
+        <div class="modal-container">
+            <div class="child">
+                <div class="image-wrap">
+                    <img src="Public/images/lawer.jpg">
+                </div>
+                <div class="modal-content-wrap">
+                    <ul>
+                        <li>Регистрация, перерегистрация всех форм коммерческих и некоммерческих юридических лиц и индивидуальных предпринимателей;</li>
+                        <li>Акционирование юридических лиц;</li>
+                        <li>Разработка учредительных и корпоративных документов юридических лиц на базе лучшей практики;</li>
+                        <li>Разработка и экспертиза всех видов договоров;</li>
+                        <li>Юридическое сопровождение всех видов сделок: проверка правоспособности и полномочия контрагента, участие в переговорах с позиции клиента, организация нотариального удостоверения, государственная регистрация сделок (при необходимости);</li>
+                        <li>Юридическое сопровождение всех форм сделок между акционерами;</li>
+                        <li>Проведение всех форм реорганизации юридических лиц (присоединение, слияние, разделение, выделение, преобразование), M&amp;A сделок;</li>
+                        <li>Проведение процесса ликвидации юридических лиц;</li>
+                        <li>Защита интересов юридических лиц посредством представления в судебных и иных органах по всем категориям дел (корпоративные споры между акционерами, споры между акционером и юридическим лицом, споры между юридическими лицами, споры между юридическим лицом и государственными органами);</li>
+                        <li>Защита интересов физических лиц посредством представления в судебных и иных органах по всем категориям дел (споры по гражданским, семейным, наследственным, жилищным, трудовым, административным и другим делам);</li>
+                        <li>Защита интересов клиента по уголовным делам на стадии следствия и в суде;</li>
+                        <li>Проведение due diligence (юридического аудита) по заказу клиента;</li>
+                        <li>Устная и письменная консультация по всем правовым вопросам клиента.</li>
+                    </ul>
+                </div>
+                <div class="close-md">Закрыть</div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="bank-services">
+        <div class="modal-container">
+            <div class="child">
+                <div class="image-wrap">
+                    <img src="Public/images/lawer.jpg">
+                </div>
+                <div class="modal-content-wrap">
+                    <ul>
+                        <li>Регистрация, перерегистрация всех форм коммерческих и некоммерческих юридических лиц и индивидуальных предпринимателей;</li>
+                        <li>Акционирование юридических лиц;</li>
+                        <li>Разработка учредительных и корпоративных документов юридических лиц на базе лучшей практики;</li>
+                        <li>Разработка и экспертиза всех видов договоров;</li>
+                        <li>Юридическое сопровождение всех видов сделок: проверка правоспособности и полномочия контрагента, участие в переговорах с позиции клиента, организация нотариального удостоверения, государственная регистрация сделок (при необходимости);</li>
+                        <li>Юридическое сопровождение всех форм сделок между акционерами;</li>
+                        <li>Проведение всех форм реорганизации юридических лиц (присоединение, слияние, разделение, выделение, преобразование), M&amp;A сделок;</li>
+                        <li>Проведение процесса ликвидации юридических лиц;</li>
+                        <li>Защита интересов юридических лиц посредством представления в судебных и иных органах по всем категориям дел (корпоративные споры между акционерами, споры между акционером и юридическим лицом, споры между юридическими лицами, споры между юридическим лицом и государственными органами);</li>
+                        <li>Защита интересов физических лиц посредством представления в судебных и иных органах по всем категориям дел (споры по гражданским, семейным, наследственным, жилищным, трудовым, административным и другим делам);</li>
+                        <li>Защита интересов клиента по уголовным делам на стадии следствия и в суде;</li>
+                        <li>Проведение due diligence (юридического аудита) по заказу клиента;</li>
+                        <li>Устная и письменная консультация по всем правовым вопросам клиента.</li>
+                    </ul>
+                </div>
+                <div class="close-md">Закрыть</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Public/js/jquery-3.1.0.min.js"></script>
+    <script src="Public/js/NavigationMenu.js"></script>
+    <script src="Public/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#init-slider').slick({
+                infinite: true,
+                dots: true,
+                autoplay: true,
+                speed: 500,
+                focusOnSelect: false,
+                arrows: false,
+                autoplaySpeed: 6000
+            });
+
+            $('#feedback').on('click', function (event) {
+                event.preventDefault();
+                var el = $(this).attr('data-target');
+                $('body').animate({
+                    scrollTop: $(el).offset().top
+                }, 800);
+            });
+
+            $('.services-block-button').each(function (i, obj) {
+                $(obj).on('click', function (event) {
+                    var target = $($(this).attr('data-target'));
+                    $(target).fadeIn('fast');
+                });
+            });
+
+            $('.close-md').on('click', function (event) {
+                var modal = $(this).parent().parent();
+                $(modal).addClass('close');
+                $(modal).parent().fadeOut('slow', function() {
+                    $(modal).removeClass('close');
+                });
+            })
+        });
+    </script>
 </body>
 </html>

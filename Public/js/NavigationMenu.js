@@ -3,26 +3,37 @@
  */
 
 $(document).ready(function() {
-
+    var isScrollingByTap = false;
     $('a.nav-bar-element[href^="#"]').click(function(){
+        isScrollingByTap = true;
         var el = $(this).attr('href');
         $('body').animate({
-            scrollTop: $(el).offset().top}, 800);
+            scrollTop: $(el).offset().top
+        }, 800, function() {
+            isScrollingByTap = false;
+        });
+        reactivateNavigationBar(el);
         return false;
     });
 
-    $(window).scroll(function () {
-        var windowScroll = $(window).scrollTop; //Получаем величину, показывающую на сколько прокручено окно
-
-        $('a.nav-bar-element[href^="#"]').each(function() {
-            var el = $(this).attr('href');
-
-            if(windowScroll == $(el).offset().top) {
-                $('li', this).addClass('active');
+    function reactivateNavigationBar(target) {
+        $('a.nav-bar-element[href^="#"]').each(function(i, obj) {
+            if($(obj).attr('href') === target) {
+                if(!$(obj).find('li').hasClass('active'))
+                    $(obj).find('li').addClass('active');
             } else {
-                $('le', this).removeClass('active');
+                if($(obj).find('li').hasClass('active'))
+                    $(obj).find('li').removeClass('active');
             }
         });
+    }
+
+    $(window).scroll(function () {
+        if(!isScrollingByTap) {
+            $('a.nav-bar-element[href^="#"]').each(function (i, obj) {
+                $(obj).find('li').removeClass('active');
+            });
+        }
     });
 
 });
